@@ -512,6 +512,10 @@ footer .container .footer-bottom .app-links .app-logo i {
   }
 }
 @media (max-width: 760px) {
+  body {
+    width: 957px;
+  }
+
   header .container img {
     width: 180px;
     height: 55px;
@@ -587,7 +591,7 @@ footer .container .footer-bottom .app-links .app-logo i {
 }
 @media (max-device-width: 480px) {
   body {
-    width: 720px;
+    width: 957px;
   }
 
   header .container img {
