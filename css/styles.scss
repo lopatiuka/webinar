@@ -1,0 +1,850 @@
+@font-face {
+    font-family: "Cerebri Sans Pro";
+    src: url("../fonts/CerebriSansPro-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Cerebri Sans Pro";
+    src: url("../fonts/CerebriSansPro-Bold.ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+section, .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 160px;
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        img {
+            margin-left: 20px;
+        }
+        .navigation {   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+                max-height: 100px;
+                margin: 0 10px 0 10px;
+                padding: 0 5px 0 5px;
+                font-family: 'Cerebri Sans Pro';
+                text-decoration: none;
+                p {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                    margin: 0;
+                }
+                
+                .on-hover {
+                    display: flex;
+                    bottom: 0;
+                    width: 0;
+                    height: 3px;
+                    transition-property: width;
+                    transition-duration: 0.3s;
+                    transition-timing-function: ease-in-out;
+                    background-color: #FFD639;
+                    align-self: flex-start;
+                    margin: 0;
+                }
+            }
+
+            a:hover {
+                .on-hover {
+                    width: 100%;
+                }
+            }        
+        }
+    }
+}
+
+.intro {    
+    width: 100%;
+    height: 572px;
+    background-image: url('../images/bg\ image\ .png');
+    background-color: #3d445cbe;
+    justify-content: center;
+    margin-bottom: 50px;
+    .container {
+        justify-content: center;
+        p {
+            font-family: Cerebri Sans Pro;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 77px;
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+.video {
+    .container {
+        .header {
+            font-family: Cerebri Sans Pro;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            color: #3F455D;
+        }
+
+        .date {
+            font-family: Cerebri Sans Pro;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;            
+            text-align: center;
+            color: #696969;            
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1200px;
+            height: 620px;
+            box-shadow: 0px 0px 40px 5px rgba(51, 51, 51, 0.1);
+            border-radius: 10px;
+            .video {
+                width: 1146px;
+                height: 570px;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 277px;
+                height: 56px;
+                background-color: #FFD639;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 15px;
+                font-family: 'Cerebri Sans Pro';
+                color: #3F455D;
+            }
+
+            a:first-child {
+                margin-right: 50px;
+            }
+        }
+    }   
+}
+
+.about {
+    margin-top: 100px;
+    .container {
+        .header {
+            width: 790px;
+            height: 48px;
+            font-family: Cerebri Sans Pro;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            color: #3F455D;
+            margin-bottom: 10px;
+        }
+
+        .about-intro {
+            width: 790px;
+            font-family: Cerebri Sans Pro;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 26px;
+            color: #696969;
+            margin-top: 10px;
+        }
+
+        .presentation {
+            display: flex;
+            flex-direction: column;
+            .item {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 1197px;
+                .adaptive-header {
+                    display: none;
+                    font-family: Cerebri Sans Pro;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 29px;
+                    text-align: center;
+                    color: #3F455D;
+                }
+                img {
+                    width: 303px;
+                    height: 303px;
+                }
+                img:last-child {
+                    align-self: flex-start;
+                    margin-top: 35px;
+                }
+                .description {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 790px;
+                    h3{
+                        font-family: Cerebri Sans Pro;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 29px;
+                        text-align: center;
+                        color: #3F455D;
+                    }
+                    p{
+                        font-family: Cerebri Sans Pro;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 15px;
+                        line-height: 26px;
+                        color: #696969;
+                    }
+                    ul {
+                        width: 100%;
+                        font-family: Cerebri Sans Pro;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 26px;
+                        color: #696969;
+                        list-style-type: none;
+                        li:before {
+                            color: orange;
+                            content: "\2022";
+                            margin-right: 10px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .learn-with-adam {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 790px;
+            border-top: 1px solid #3D445C;
+            h2{
+                font-family: Cerebri Sans Pro;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 48px;
+                text-align: center;
+                color: #3F455D;    
+                margin-top: 50px;            
+            }
+            p{
+                font-family: Cerebri Sans Pro;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 26px;
+                color: #696969;                
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 277px;
+                    height: 56px;
+                    background-color: #FFD639;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    font-size: 15px;
+                    font-family: 'Cerebri Sans Pro';
+                    color: #3F455D;
+                }
+
+                a:first-child {
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgb(218, 216, 216);
+    margin-top: 100px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1200px;
+        h3 {
+            font-family: Cerebri Sans Pro;
+            font-size: 20px;
+            font-weight: 550;
+            text-align: left;
+            color: #3F455D;
+            margin-top: 0;
+        }
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 150px;
+            .adress {
+                font-family: Cerebri Sans Pro;
+                font-size: 18px;
+                text-align: left;
+                color: #3F455D;
+                img {
+                    margin-bottom: 20px;
+                }
+                .traders-expert {
+                    color: rgb(255, 232, 24);
+                    margin-top: 30px;
+                }   
+            }
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                a {
+                    font-family: Cerebri Sans Pro;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 48px;
+                    text-align: center;
+                    color: #3F455D;
+                    text-decoration: none;
+                }
+            }
+
+            .footer-policies {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-items: flex-start;
+                a {
+                    font-family: Cerebri Sans Pro;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 48px;
+                    text-align: center;
+                    color: #3F455D;
+                    text-decoration: none;
+                }
+            }
+
+            .newsletter {
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    input {
+                        width: 300px;
+                        height: 70px;
+                        font-family: 'Cerebri Sans Pro';
+                        font-size: 18px;
+                        border: none;
+                        margin: 10px 10px 10px 0;
+                        background-color: rgb(243, 243, 252);
+                        border-radius: 5px;
+                        padding: 0 10px 0 10px;
+                    }
+
+                    input[type="submit"] {
+                        width: 150px;
+                        height: 60px;
+                        background-color: rgb(255, 211, 13);
+                        color: #3F455D;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 50px;
+            .rights {
+                p {
+                    font-family: Cerebri Sans Pro;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #3F455D;                    
+                }
+            }
+
+            .app-links {
+                display: flex;
+                justify-content: space-between;
+                .app-logo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 35px;
+                    height: 35px;
+                    border: 1px solid rgb(187, 187, 187);
+                    border-radius: 100px;
+                    margin-right: 20px;
+                    i {
+                        color: rgb(100, 100, 100);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 1170px ) {
+    .video {
+        .container{
+            .header {
+                width: 700px;
+            }
+            .video-container {
+                width: 900px;
+                height: 600px;
+                .video {
+                    width: 840px;
+                    height: 540px;
+                }
+            }
+        }
+    }
+
+    .about {
+        .container { 
+            width: 100%;
+            .presentation { 
+                width: 100%;
+                .item {
+                    width: 100%;
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+                    img:last-child {
+                        margin-top: 50px;
+                    }
+                    .description {
+                        width: 700px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            h3 {
+                font-size: 18px;
+            }
+            .footer-top {
+                .adress {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .footer-links {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+
+                .footer-policies {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+
+                .newsletter {
+                    form {
+                        input {
+                            width: 250px;
+                            height: 60px;
+                        }
+                        input[type="submit"] {
+                            width: 120px;
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+
+            .footer-bottom .rights p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media ( max-width: 986px ) {
+    header {
+        .container {
+            img {
+                width: 200px;
+                height: 65px;
+            }
+            .navigation {
+                a {
+                    font-size: 14px;
+                    margin: 0 5px 0 5px;
+                }
+            }
+        }
+    }
+
+    .video {
+        .container{
+            .video-container {
+                width: 880px;
+                height: 520px;
+                .video {
+                    width: 820px;
+                    height: 460px;
+                }
+            }
+        }
+    }
+
+    .about {
+        .container { 
+            .presentation { 
+                .item {
+                    .description {
+                        width: 650px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            h3 {
+                font-size: 18px;
+            }
+            .footer-top {
+                .adress {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .footer-links {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+
+                .footer-policies {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+
+                .newsletter {
+                    form {
+                        input {
+                            width: 250px;
+                            height: 60px;
+                        }
+                        input[type="submit"] {
+                            width: 120px;
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 760px ) {
+    header {
+        .container {
+            img {
+                width: 180px;
+                height: 55px;
+            }
+            .navigation {
+                a {
+                    font-size: 12px;
+                    margin: 0 5px 0 5px;
+                }
+            }
+        }
+    }
+
+    .intro {
+        .container {
+            p {
+                width: 616px;
+            }
+        }
+    }
+
+    .video {
+        .container{
+            .video-container {
+                width: 720px;
+                height: 390px;
+                .video {
+                    width: 680px;
+                    height: 350px;
+                }
+            }
+        }
+    }
+
+    .about {
+        .container { 
+            .about-intro {
+                width: 496px;
+            }
+            .presentation { 
+                .item {
+                    flex-direction: column;
+                    .adaptive-header {
+                        display: block;
+                    }
+                    .description {
+                        width: 650px;
+                        flex-direction: row;
+                        h3 {
+                            display: none;
+                        }
+                    }
+                }
+
+                .item:nth-child(2) {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    img {
+                        align-self: initial;
+                    }
+                    .description {
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            .learn-with-adam {
+                p {
+                    width: 496px;
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            .footer-top {
+                flex-direction: column;
+                align-items: center;
+                .adress {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .footer-links, .footer-policies {
+                    align-items: center;
+                }
+
+                .newsletter {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    form {
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( max-device-width: 480px ) {
+    body {
+        width: 720px;
+    }
+    header {
+        .container {
+            img {
+                width: 180px;
+                height: 55px;
+            }
+            .navigation {
+                a {
+                    font-size: 12px;
+                    margin: 0 5px 0 5px;
+                }
+            }
+        }
+    }
+
+    .intro {
+        .container {
+            p {
+                width: 616px;
+                font-size: 70px;
+            }
+        }
+    }
+
+    .video {
+        .container{
+            .video-container {
+                width: 700px;
+                height: 380px;
+                .video {
+                    width: 660px;
+                    height: 340px;
+                }
+            }
+
+            .buttons {
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    .about {
+        .container { 
+            .header {
+                width: 100%;
+            }
+            .about-intro {
+                width: 680px;
+                font-size: 24px;
+                line-height: 30px;
+            }
+            .presentation { 
+                .item {
+                    flex-direction: column;
+                    .adaptive-header {
+                        font-size: 40px;
+                        line-height: 50px;
+                    }
+                    .description {
+                        width: 650px;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        h3 {
+                            display: none;
+                        }
+
+                        p {
+                            font-size: 24px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+
+                .item:nth-child(2) {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    img {
+                        align-self: initial;
+                    }
+                    .description {
+                        flex-direction: column;
+                    }
+
+                    ul {
+                        font-size: 24px;
+                        line-height: 30px;
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            .learn-with-adam {
+                width: 496px;
+                p {
+                    width: 496px;
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+
+                .buttons {
+                    a {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            .footer-top {
+                flex-direction: column;
+                align-items: center;
+                .adress {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .footer-links, .footer-policies {
+                    align-items: center;
+                }
+
+                .newsletter {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    form {
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
