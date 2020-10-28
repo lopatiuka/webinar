@@ -1209,6 +1209,48 @@ footer {
 
 }
 
+@media ( max-device-width: 540px ) {
+    body {
+        width: 850px;
+        overflow-x: hidden;
+    }
+
+    .menu-icon {
+        right: -170px;
+    }
+
+    .menu-container {
+        right: -297px;
+    }
+
+    .video {
+        .container {
+            .header {
+                width: 500px;
+            }
+
+            .video-container {
+                width: 500px;
+                height: 400px;
+            }
+
+            .video {
+                width: 460px;
+                height: 360px;
+            }
+        }
+    }
+
+    .about {
+        .container {
+            .learn-with-adam {
+                width: 600px;
+            }
+        }
+    }
+}
+
+
 @media ( max-device-width: 480px ) {
     body {
         width: 957px;
@@ -1394,6 +1436,17 @@ footer {
                 }
             }
         }
+    }
+}
+
+
+@media ( max-device-width: 414px ) {
+    .menu-icon {
+        right: -500px;
+    }
+
+    .menu-container {
+        right: -550px;
     }
 }
 
