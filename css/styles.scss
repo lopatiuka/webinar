@@ -523,7 +523,6 @@ header {
                     p{
                         font-family: Cerebri Sans Pro;
                         font-style: normal;
-                        font-weight: bold;
                         font-size: 15px;
                         line-height: 26px;
                         color: #696969;
@@ -556,7 +555,6 @@ header {
             border-top: 1px solid #3D445C;
             h2{
                 font-family: Cerebri Sans Pro;
-                font-style: normal;
                 font-weight: bold;
                 font-size: 40px;
                 line-height: 48px;
@@ -566,8 +564,6 @@ header {
             }
             p{
                 font-family: Cerebri Sans Pro;
-                font-style: normal;
-                font-weight: normal;
                 font-size: 15px;
                 line-height: 26px;
                 color: #696969;                
@@ -774,7 +770,7 @@ footer {
                         width: 277px;
                         height: 55px;
                         font-family: 'Cerebri Sans Pro';
-                        font-size: 18px;
+                        font-size: 15px;
                         border: none;
                         margin: 10px 10px 10px 0;
                         background-color: #F5F5F5;;
@@ -789,6 +785,7 @@ footer {
                         background-color: #FFD639;
                         color: #3F455D;
                         font-weight: 600;
+                        font-size: 15px;
                         transition-property: color, background-color, margin-top;
                         transition-duration: 0.3s;
                         margin-top: 50px;

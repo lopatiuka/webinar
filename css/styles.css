@@ -474,7 +474,6 @@ header .container .navigation a:hover p {
 .about .container .presentation .item .description p {
   font-family: Cerebri Sans Pro;
   font-style: normal;
-  font-weight: bold;
   font-size: 15px;
   line-height: 26px;
   color: #696969;
@@ -503,7 +502,6 @@ header .container .navigation a:hover p {
 }
 .about .container .learn-with-adam h2 {
   font-family: Cerebri Sans Pro;
-  font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 48px;
@@ -513,8 +511,6 @@ header .container .navigation a:hover p {
 }
 .about .container .learn-with-adam p {
   font-family: Cerebri Sans Pro;
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   line-height: 26px;
   color: #696969;
@@ -707,7 +703,7 @@ footer .container .footer-top .newsletter form input {
   width: 277px;
   height: 55px;
   font-family: "Cerebri Sans Pro";
-  font-size: 18px;
+  font-size: 15px;
   border: none;
   margin: 10px 10px 10px 0;
   background-color: #F5F5F5;
@@ -721,6 +717,7 @@ footer .container .footer-top .newsletter form input[type=submit] {
   background-color: #FFD639;
   color: #3F455D;
   font-weight: 600;
+  font-size: 15px;
   transition-property: color, background-color, margin-top;
   transition-duration: 0.3s;
   margin-top: 50px;
