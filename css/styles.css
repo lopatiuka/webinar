@@ -1150,6 +1150,15 @@ footer .container .footer-bottom .app-links .app-logo:hover i {
     font-size: 30px;
   }
 }
+@media (max-device-width: 375px) {
+  .menu-icon {
+    right: -500px;
+  }
+
+  .menu-container {
+    right: -580px;
+  }
+}
 @media (max-device-width: 320px) {
   .menu-icon {
     right: -500px;
