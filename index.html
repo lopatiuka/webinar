@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width">
         <title>Webinar Recording</title>
         <link rel="stylesheet" href="./css/styles.css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/5cee7e9296.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -14,14 +14,49 @@
                 <nav class = "navigation">
                     <a href = "#"><p>Home</p><div class = "on-hover"></div></a>
                     <a href = "#"><p>About Us</p><div class = "on-hover"></div></a>
-                    <a href = "#"><p>Broker</p><div class = "on-hover"></div></a>
+                    <div class = "select"><p>Broker</p><div class = "on-hover"></div> 
+                        <div class = "hidden-links broker-links">
+                            <a href = "#">Broker Listing</a>
+                            <a href = "#">Brokers Review</a>
+                            <a href = "#">Broker Review Directory</a>
+                        </div> 
+                    </div>
                     <a href = "#"><p>Education</p><div class = "on-hover"></div></a>
-                    <a href = "#"><p>Events</p><div class = "on-hover"></div></a>
+                    <div class = "select events"><p>Events</p><div class = "on-hover"></div> 
+                        <div class = "hidden-links event-links">
+                            <a href = "#">Event - Dedicated Page</a>
+                        </div> 
+                    </div>                    
                     <a href = "#"><p>Others Products</p><div class = "on-hover"></div></a>
                     <a href = "#"><p>News</p><div class = "on-hover"></div></a>
                     <a href = "#"><p>Contact Us</p><div class = "on-hover"></div></a>
                 </nav>
+                <div id = "menu" class = "menu-container hidden">
+                    <div class = "menu-container-header">
+                        <img src = "images/logo header.png">
+                        <p id = "hide-menu" class = "hide">&#10006;</p>
+                    </div>
+                    <div class = "menu-links">
+                        <a href = "#"><p>Home</p></a>
+                        <a href = "#"><p>About Us</p></a>
+                        <details>
+                            <summary>Broker <div><i class = "arrow"></i></div></summary>
+                            <a href = "#">Broker Listing</a>
+                            <a href = "#">Brokers Review</a>
+                            <a href = "#">Broker Review Directory</a>
+                        </details>
+                        <a class = "after-details" href = "#"><p>Education</p></a>
+                        <details>
+                            <summary>Events <div><i class = "arrow"></i></div></summary>
+                            <a href = "#">Event - Dedicated Page</a>
+                        </details>
+                        <a class = "after-details" href = "#"><p>Others Products</p></a>
+                        <a href = "#"><p>News</p></a>
+                        <a href = "#"><p>Contact Us</p></a>
+                    </div>
+                </div>
             </div>
+            <i id = "show-menu" class="fa fa-bars menu-icon"></i>
         </header>
         <main>
             <section class = "intro">
@@ -32,10 +67,10 @@
             <section class = "video">
                 <div class = "container">
                     <h2 class = "header">Become A Day Trader: "The Formula For Success"</h2>
-                    <p class = "date">26th October, 2020</p>
+                    <p id = "date" class = "date"></p>
                     <div class = "video-container">
                         <div class = "video">
-                            <iframe id = "iframe-video" width="100%" height="100%" src="https://www.youtube.com/embed?v=ZU1XBqlBikA"
+                            <iframe id = "iframe-video" width="100%" height="100%" src="https://www.youtube.com/embed/ZU1XBqlBikA"
                             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                             </iframe>
                         </div>
@@ -135,8 +170,8 @@
                         <p class = "full-adress">Bik A, 15/F Hillier Comm. Bldg., 65-67 Bonham</br>
                             Strand East, Sheung Wan, Hong Kong
                         </p>
-                        <p class = "community">Community@Traders.Expert</p>
-                        <p class = "traders-expert">Traders.Expert</p>
+                        <a href = "#">Community@Traders.Expert</a>
+                        <a href = "#" class = "traders-expert">Trader.Expert</a>
                     </div>
                     <div class = "footer-links">
                         <h3>Quick Links</h3>
@@ -174,10 +209,10 @@
                             <a href = "#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         </div>
                         <div class = "app-logo">
-                            <a href = "#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href = "#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
                         </div>
                         <div class = "app-logo">
-                            <a href = "#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href = "#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                         </div>
                         <div class = "app-logo">
                             <a href = "#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
@@ -186,5 +221,24 @@
                 </div>
             </div>
         </footer>
+        <script>
+             let showMenu = () => {
+                document.getElementById( "menu" ).classList.remove("hidden");
+            }
+
+            let hideMenu = () => {
+                document.getElementById( "menu" ).classList.add("hidden");
+            }
+
+            document.getElementById( "show-menu" ).addEventListener( "click", showMenu );
+            document.getElementById( "hide-menu" ).addEventListener( "click", hideMenu );
+
+            let month = ["January", "February", "March", "April", "May", "June", "July", "August", "Septemer", "October", "November", "December"];
+            let day = ["Monday", "Tuesday", "Wedndesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+            let currentDate = new Date();
+
+            document.getElementById("date").innerText = `${currentDate.getDate()} ${month[currentDate.getMonth()]}, ${currentDate.getFullYear()} `
+        </script>
     </body>
 </html>
